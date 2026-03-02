@@ -1,26 +1,26 @@
 class Flowmark < Formula
   desc "Markdown auto-formatter for clean diffs and semantic line breaks"
   homepage "https://github.com/jlevy/flowmark-rs"
-  version "0.2.5"
+  version "0.2.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/jlevy/flowmark-rs/releases/download/v#{version}/flowmark-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "35a872122b2251273b5900fa4729d2096d939b80dc5767657913563fa68f962c"
+      sha256 "9ba6c96bb93d6960ac994ea5658b45099bf62e296589f1d997f6f6b04166d1fb"
     else
       url "https://github.com/jlevy/flowmark-rs/releases/download/v#{version}/flowmark-v#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "2edeaa2481972a4aafc70cd0dfdf718e8b3cdf8291bd84ebc8935e6b3ea0ee89"
+      sha256 "a087036e5cbf303019965695951349e9adf974464e33a5b201b7c6bdf933291e"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/jlevy/flowmark-rs/releases/download/v#{version}/flowmark-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "afbedf4addaa206c6b7070496bed556d1e5ac2434bfd775f02e67429e0fb1336"
+      sha256 "1ee02c0657eeb2dd748093a5b60ef94a99e1e18aac62c0ddbb34ca055192b9f2"
     else
       url "https://github.com/jlevy/flowmark-rs/releases/download/v#{version}/flowmark-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "d3a24fffbba1000d8f61f76c53b1a6c1c3c8c8a139e2a7c3c55bce5b12b47dc7"
+      sha256 "a55b379d55f0963d5630faf073c128d7b70553c8e77ee24316d7b196100474bc"
     end
   end
 
